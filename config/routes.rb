@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :games
+  resources :consoles
   get 'welcome/index'
   root 'welcome#index'
   devise_for :users
